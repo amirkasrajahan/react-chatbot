@@ -8,6 +8,7 @@ import './App.css'
 
 function App() {
         const [currentMessage, setChatMessage] = useState([]);
+        const [isDarkMode, setIsDarkMode] = useState(false);
         const welcomeMessage = "Welcome to the chatbot project! Send a message using the textbox below."
 
 
@@ -15,9 +16,14 @@ function App() {
           setChatMessage([]);
         }
         return (
-          <div className="chat-window">
+          <div className={isDarkMode ? 'chat-window-dark-mode' : 'chat-window'}>
             
             <div className="chat-header">Chatbot</div>
+            <div className="chat-header">
+              <button onClick={() => setIsDarkMode(!isDarkMode)} className='dark-mode-button'>
+                {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+              </button>
+            </div>
             <div className="chat-header">Messages: {currentMessage.length / 2}
               <button className="reset-button" onClick={handleResetChat}>Reset Chat</button>
             </div>
