@@ -3,6 +3,7 @@ import './Header.css';
 export function HomePage() {
   return (
   <>
+      <title>Home</title>
       <div className="header">
       <div class="left-section">
         <a href="index.html" class="header-link">
