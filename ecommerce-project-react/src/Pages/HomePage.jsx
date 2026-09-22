@@ -2,7 +2,8 @@ import './HomePage.css';
 import { Header } from '../components/Header.jsx';
 export function HomePage() {
   return (
-  <>
+  <>  
+  <link rel="icon" type="image/x-icon" href="/images/icons/home-favicon.png" />
       <title>Home</title>
       <Header />
 

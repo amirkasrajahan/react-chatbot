@@ -1,0 +1,21 @@
+.not-found-page {
+  max-width: 850px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.not-found-message {
+  color: rgb(112, 112, 112);
+  font-size: 16px;
+}
